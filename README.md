@@ -22,7 +22,7 @@ Up to 5G of RAM will be used.
 * Target language: The translation language according to google translator
 * Auto translation: Activated or deactivated
 * Auto speech: When activated, the bot sends an audio of the transcription or translation
-* Conversation mode: Select a chat_id where the bot will send the speech, this mode can be used to have a conversation with someone using the bot. Use this bot to get your ID: https://telegram.me/myidbot
+* Conversation mode: Select a chat_id where the bot will send the speech instead of yours, this mode can be used to have a conversation with someone using the bot. Use this bot to get your ID: https://telegram.me/myidbot
 * Model size: Select the model size according to your system hardware:
 
 ### Bot usage:
