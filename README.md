@@ -1,3 +1,7 @@
+# Telegrambot for use Whisper
+
+This bot will allow you to transcribe, translate or generate an audio from the transcribed/translated audio or video that has been sent to it. Besides, it can be used to send translated audios to an other telegram user to have a conversation.
+
 ### Requirements:
 * pip install deep-translator
 * pip install pyttsx3
