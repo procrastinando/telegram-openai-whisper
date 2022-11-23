@@ -1,17 +1,14 @@
-# telegram-openai-whisper
-Bot for telegram that controls whisper
-
 ### Requirements:
-pip install deep-translator
-pip install pyttsx3
-sudo apt update && sudo apt install ffmpeg
-pip install setuptools-rust
-pip install git+https://github.com/openai/whisper.git
-sudo apt install espeak
+* pip install deep-translator
+* pip install pyttsx3
+* sudo apt update && sudo apt install ffmpeg
+* pip install setuptools-rust
+* pip install git+https://github.com/openai/whisper.git
+* sudo apt install espeak
 
 ### Setup:
-Create a telegram bot
-Insert the telegram bot token into "transcriber.py", in the line 367
+* Create a telegram bot
+* Insert the telegram bot token into "transcriber.py", in the line 367
 
 ### Commands menu usage:
 * Source language: There are two options: automatic and english
