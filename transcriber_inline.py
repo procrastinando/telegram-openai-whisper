@@ -75,7 +75,7 @@ def read_msg(offset):
                         f.write(str(db_settings))
                     print("TRANSCRIPTION: " + result_transcription["text"])
                     
-                    if settings["/conversation_mode"] == "Deactivate":
+                    if settings["/conversation_mode"] == "Deactivated":
                         if settings["/auto_trans"] == True:
                             message = result_transcription["text"]
                             send_message(user_id, message)
@@ -167,7 +167,7 @@ def read_msg(offset):
 
                 elif comando[1] == "message":
                     if i["message"]["text"] == "/settings":
-                        send_inline(user_id, "->               Settings               <-", generate_inline(user_id, db_settings))
+                        send_inline(user_id, "---->               Settings               <----", generate_inline(user_id, db_settings))
                         settings["position"] = ""
 
                     elif i["message"]["text"] == "/start":
@@ -415,11 +415,11 @@ def update_database(db_settings):
 
 ##################################################################################################################################
 
-default_settings = {"first_name": "", "requests": {}, "/source_lang": "Automatic", "/target_lang": "en", "/auto_trans": True, "/conversation_mode": "Deactivate", "list": [], "/auto_speech": True, "/voice": 0, "/model_size": "medium", "position": ""}
+default_settings = {"first_name": "", "requests": {}, "/source_lang": "Automatic", "/target_lang": "en", "/auto_trans": True, "/conversation_mode": "Deactivated", "list": [], "/auto_speech": True, "/voice": 0, "/model_size": "medium", "position": ""}
 
 white_list = []
 
-token = 'xxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token = 'xxxx:xxxxxxxx'
 base_url = 'https://api.telegram.org/bot' + token
 offset = 0
 
